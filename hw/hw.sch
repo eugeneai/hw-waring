@@ -1909,17 +1909,6 @@ F 3 "~" H 2250 8200 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L Transistor_FET:2N7000 Q?
-U 1 1 5EF1C884
-P 3050 8550
-F 0 "Q?" H 3254 8596 50  0000 L CNN
-F 1 "2N7000" H 3254 8505 50  0000 L CNN
-F 2 "Package_TO_SOT_THT:TO-92_Inline" H 3250 8475 50  0001 L CIN
-F 3 "https://www.fairchildsemi.com/datasheets/2N/2N7000.pdf" H 3050 8550 50  0001 L CNN
-	1    3050 8550
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:+12V #PWR?
 U 1 1 5EF3B679
 P 3150 8250
@@ -2049,4 +2038,15 @@ Wire Wire Line
 	3400 3250 3500 3250
 Text Label 3500 3250 0    50   ~ 0
 HIN
+$Comp
+L Device:Q_NMOS_GDS Q?
+U 1 1 5EEAADC9
+P 3050 8550
+F 0 "Q?" H 3255 8596 50  0000 L CNN
+F 1 "IRF1404" H 3255 8505 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-220-3_Vertical" H 3250 8650 50  0001 C CNN
+F 3 "https://alltransistors.com/any-datasheet.php?doc=irf1404&dire=09" H 3050 8550 50  0001 C CNN
+	1    3050 8550
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
