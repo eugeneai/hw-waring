@@ -612,8 +612,6 @@ Wire Wire Line
 Text Label 15250 5100 0    50   ~ 0
 SS
 Wire Wire Line
-	12650 6450 12750 6450
-Wire Wire Line
 	12650 6550 12750 6550
 Wire Wire Line
 	12650 6650 12750 6650
@@ -2049,4 +2047,30 @@ F 3 "https://alltransistors.com/any-datasheet.php?doc=irf1404&dire=09" H 3050 85
 	1    3050 8550
 	1    0    0    -1  
 $EndComp
+$Comp
+L Device:R R?
+U 1 1 5EEE6986
+P 12450 6300
+F 0 "R?" H 12520 6346 50  0000 L CNN
+F 1 "10K" H 12520 6255 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 12380 6300 50  0001 C CNN
+F 3 "~" H 12450 6300 50  0001 C CNN
+	1    12450 6300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 5EEE6D5A
+P 12450 6100
+F 0 "#PWR?" H 12450 5950 50  0001 C CNN
+F 1 "+5V" H 12465 6273 50  0000 C CNN
+F 2 "" H 12450 6100 50  0001 C CNN
+F 3 "" H 12450 6100 50  0001 C CNN
+	1    12450 6100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	12450 6100 12450 6150
+Wire Wire Line
+	12450 6450 12750 6450
 $EndSCHEMATC
