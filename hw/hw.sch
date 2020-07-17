@@ -2128,4 +2128,268 @@ Wire Wire Line
 	11800 6100 11800 6150
 Wire Wire Line
 	12150 6100 12150 6150
+$Comp
+L Timer:LM555xN U?
+U 1 1 5F12DCF3
+P 5850 7000
+F 0 "U?" H 5800 7000 50  0000 C CNN
+F 1 "LM555xN" H 6050 6650 50  0000 C CNN
+F 2 "Package_DIP:DIP-8_W7.62mm" H 6500 6600 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/lm555.pdf" H 6700 6600 50  0001 C CNN
+	1    5850 7000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5F12FCF5
+P 7000 7550
+F 0 "#PWR?" H 7000 7300 50  0001 C CNN
+F 1 "GND" H 7005 7377 50  0000 C CNN
+F 2 "" H 7000 7550 50  0001 C CNN
+F 3 "" H 7000 7550 50  0001 C CNN
+	1    7000 7550
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5F130051
+P 5850 7550
+F 0 "#PWR?" H 5850 7300 50  0001 C CNN
+F 1 "GND" H 5855 7377 50  0000 C CNN
+F 2 "" H 5850 7550 50  0001 C CNN
+F 3 "" H 5850 7550 50  0001 C CNN
+	1    5850 7550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5F13032F
+P 4950 6650
+F 0 "R?" H 4800 6700 50  0000 L CNN
+F 1 "10K" H 4800 6550 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 4880 6650 50  0001 C CNN
+F 3 "~" H 4950 6650 50  0001 C CNN
+	1    4950 6650
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5F1308FC
+P 4950 7000
+F 0 "R?" H 4800 7050 50  0000 L CNN
+F 1 "10K" H 4800 6900 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 4880 7000 50  0001 C CNN
+F 3 "~" H 4950 7000 50  0001 C CNN
+	1    4950 7000
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5F130C32
+P 4950 7200
+F 0 "#PWR?" H 4950 6950 50  0001 C CNN
+F 1 "GND" H 4955 7027 50  0000 C CNN
+F 2 "" H 4950 7200 50  0001 C CNN
+F 3 "" H 4950 7200 50  0001 C CNN
+	1    4950 7200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5850 7400 5850 7550
+$Comp
+L Device:C C?
+U 1 1 5F178097
+P 7000 7350
+F 0 "C?" H 6950 7250 50  0000 R CNN
+F 1 "1u" H 6950 7450 50  0000 R CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 7038 7200 50  0001 C CNN
+F 3 "~" H 7000 7350 50  0001 C CNN
+	1    7000 7350
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+12V #PWR?
+U 1 1 5F178671
+P 5300 7550
+F 0 "#PWR?" H 5300 7400 50  0001 C CNN
+F 1 "+12V" H 5315 7723 50  0000 C CNN
+F 2 "" H 5300 7550 50  0001 C CNN
+F 3 "" H 5300 7550 50  0001 C CNN
+	1    5300 7550
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	5300 7200 5350 7200
+Wire Wire Line
+	5350 6800 5250 6800
+Wire Wire Line
+	5250 6800 5250 6450
+Wire Wire Line
+	5250 6450 6450 6450
+Wire Wire Line
+	4950 6800 4950 6850
+Wire Wire Line
+	4950 6800 5250 6800
+Connection ~ 4950 6800
+Connection ~ 5250 6800
+Wire Wire Line
+	4950 7150 4950 7200
+$Comp
+L power:+12V #PWR?
+U 1 1 5F1E9BD3
+P 4950 6450
+F 0 "#PWR?" H 4950 6300 50  0001 C CNN
+F 1 "+12V" H 4965 6623 50  0000 C CNN
+F 2 "" H 4950 6450 50  0001 C CNN
+F 3 "" H 4950 6450 50  0001 C CNN
+	1    4950 6450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4950 6450 4950 6500
+$Comp
+L Device:R R?
+U 1 1 5F1FD4C5
+P 7000 6950
+F 0 "R?" H 6850 7000 50  0000 L CNN
+F 1 "100K" H 7100 6950 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 6930 6950 50  0001 C CNN
+F 3 "~" H 7000 6950 50  0001 C CNN
+	1    7000 6950
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	7000 7100 7000 7200
+$Comp
+L Connector:Conn_01x02_Female J?
+U 1 1 5F239066
+P 6550 7400
+F 0 "J?" V 6396 7448 50  0000 L CNN
+F 1 "BTN-FILL" V 6650 7100 50  0000 L CNN
+F 2 "Connector_Wire:SolderWire-0.127sqmm_1x02_P3.7mm_D0.48mm_OD1mm" H 6550 7400 50  0001 C CNN
+F 3 "~" H 6550 7400 50  0001 C CNN
+	1    6550 7400
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6350 7200 6450 7200
+Wire Wire Line
+	6350 6800 7000 6800
+Wire Wire Line
+	6450 7200 6450 6450
+Connection ~ 6450 7200
+Connection ~ 7000 7200
+Wire Wire Line
+	6550 7200 7000 7200
+Wire Wire Line
+	7000 7500 7000 7550
+Text Label 6600 6800 0    50   ~ 0
+FILL
+$Comp
+L power:+12V #PWR?
+U 1 1 5F2C7AD4
+P 5850 6400
+F 0 "#PWR?" H 5850 6250 50  0001 C CNN
+F 1 "+12V" H 5865 6573 50  0000 C CNN
+F 2 "" H 5850 6400 50  0001 C CNN
+F 3 "" H 5850 6400 50  0001 C CNN
+	1    5850 6400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5850 6400 5850 6600
+$Comp
+L Device:R R?
+U 1 1 5F2DBB96
+P 5300 7350
+F 0 "R?" H 5150 7400 50  0000 L CNN
+F 1 "4K7" H 5100 7550 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 5230 7350 50  0001 C CNN
+F 3 "~" H 5300 7350 50  0001 C CNN
+	1    5300 7350
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	5300 7500 5300 7550
+Wire Wire Line
+	5100 7200 5300 7200
+Connection ~ 5300 7200
+Text Label 5100 7200 0    50   ~ 0
+~MCUFILL
+Text Notes 6100 7750 0    50   ~ 0
+Water Fill control
+$Comp
+L Transistor_BJT:PN2222A Q?
+U 1 1 5F320E94
+P 7400 6800
+F 0 "Q?" H 7590 6846 50  0000 L CNN
+F 1 "PN2222A" H 7590 6755 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-92_Inline" H 7600 6725 50  0001 L CIN
+F 3 "http://www.fairchildsemi.com/ds/PN/PN2222A.pdf" H 7400 6800 50  0001 L CNN
+	1    7400 6800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5F321A54
+P 7500 7100
+F 0 "#PWR?" H 7500 6850 50  0001 C CNN
+F 1 "GND" H 7505 6927 50  0000 C CNN
+F 2 "" H 7500 7100 50  0001 C CNN
+F 3 "" H 7500 7100 50  0001 C CNN
+	1    7500 7100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7500 7000 7500 7100
+Wire Wire Line
+	7200 6800 7000 6800
+Connection ~ 7000 6800
+$Comp
+L Connector:Conn_01x02_Female J?
+U 1 1 5F34B119
+P 7700 6450
+F 0 "J?" V 7546 6498 50  0000 L CNN
+F 1 "FILL Valve" V 7750 6250 50  0000 L CNN
+F 2 "Connector_Wire:SolderWire-0.127sqmm_1x02_P3.7mm_D0.48mm_OD1mm" H 7700 6450 50  0001 C CNN
+F 3 "~" H 7700 6450 50  0001 C CNN
+	1    7700 6450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7500 6550 7500 6600
+$Comp
+L Device:D D?
+U 1 1 5F375554
+P 7200 6400
+F 0 "D?" V 7154 6480 50  0000 L CNN
+F 1 "1N4148" H 7050 6300 50  0000 L CNN
+F 2 "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal" H 7200 6400 50  0001 C CNN
+F 3 "~" H 7200 6400 50  0001 C CNN
+	1    7200 6400
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7200 6550 7500 6550
+Connection ~ 7500 6550
+$Comp
+L power:+12V #PWR?
+U 1 1 5F38CA6C
+P 7200 6150
+F 0 "#PWR?" H 7200 6000 50  0001 C CNN
+F 1 "+12V" H 7215 6323 50  0000 C CNN
+F 2 "" H 7200 6150 50  0001 C CNN
+F 3 "" H 7200 6150 50  0001 C CNN
+	1    7200 6150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7200 6150 7200 6200
+Wire Wire Line
+	7200 6200 7500 6200
+Wire Wire Line
+	7500 6200 7500 6450
+Connection ~ 7200 6200
+Wire Wire Line
+	7200 6200 7200 6250
 $EndSCHEMATC
